@@ -6,7 +6,12 @@ export const assigningStudentsForMentor = Express.Router();
 
 
 
-
+// input format
+// {
+//     "mentorEmail": "mentor01@gmail.com",
+//     "program": "FSD",
+//     "studentsEmail": ["student01@gmail.com","student02@gmail.com","student03@gmail.com"]
+//   }
 // post call for assigning students for mentor
 assigningStudentsForMentor.post('/',async(req,res)=>{
     const payload = req.body

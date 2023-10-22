@@ -11,6 +11,15 @@ studentRouter.get("/", async (req, res) => {
   res.send(students);
 });
 
+
+// input format:
+// {
+//   "studentEmail" : "student01@gmail.com",
+//   "studentName" : "Student01",
+//   "Batch" : "B44WETamil",
+//   "program":"FSD"
+// }
+
 // To create a new student
 studentRouter.post("/", async (req, res) => {
   const data = req.body;

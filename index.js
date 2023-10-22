@@ -19,7 +19,7 @@ await connectToDb()
 
 
 app.get('/',(req,res)=>{
-    res.send("Mentor and Student Assigning task")
+    res.send("Mentor and Student Assigning task ")
 });
 
 

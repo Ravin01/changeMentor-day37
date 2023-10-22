@@ -13,6 +13,13 @@ changeMentor.get("/", async (req, res) => {
   res.send(data);
 });
 
+// input format
+// {
+//   "studentEmail": "student01@gmail.com",
+//   "studentName": "Student01",
+//   "mentorEmail": "mentor02@gmail.com",
+//   "mentorName": "Mentor02"
+// }
 
 // to get specific mentor
 changeMentor.get("/:email", async (req, res) => {

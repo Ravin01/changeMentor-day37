@@ -21,6 +21,17 @@ mentorRoute.get("/", async (req, res) => {
   res.send(mentors);
 });
 
+
+// input format
+// {
+//   "mentorEmail" : "mentor03@gmail.com",
+//   "mentorName" : "Mentor03",
+//   "program":"DevOps",
+//   "Experience":"4 years",
+//   "students":[],
+//   "previousStudents" : []
+// }
+
 // to create a new mentor
 mentorRoute.post("/", async (req, res) => {
   const data = req.body
